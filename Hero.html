@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Hero แตงโม</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* ===== HERO (โค้ดเดิม) ===== */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 10%;
+      background: linear-gradient(135deg, #ff5f6d, #ffc371);
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    .hero-content {
+      max-width: 50%;
+      color: #ffffff;
+    }
+
+    .hero-content h1 {
+      font-size: 64px;
+      margin: 0 0 16px;
+    }
+
+    .hero-content p {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .hero-image img {
+      width: 350px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-content {
+        max-width: 100%;
+        margin-bottom: 40px;
+      }
+    }
+
+    /* ===== CONTENT : สายพันธุ์แตงโม (เพิ่มใหม่) ===== */
+    .content {
+      padding: 80px 10%;
+      background-color: #ffffff;
+    }
+
+    .content h2 {
+      text-align: center;
+      font-size: 42px;
+      color: #e53935;
+      margin-bottom: 40px;
+    }
+
+    .watermelon-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #f9f9f9;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #2e7d32;
+    }
+
+    .card p {
+      line-height: 1.6;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>แตงโม</h1>
+      <p>สดชื่น หวานฉ่ำ คลายร้อนทุกฤดู</p>
+    </div>
+
+    <div class="hero-image">
+      <img
+        src="https://s359.kapook.com/pagebuilder/192eb498-1add-4870-b5f5-d65bbc9c0b0c.jpg"
+        alt="แตงโม">
+    </div>
+  </section>
+
+  <!-- CONTENT SECTION -->
+  <section class="content">
+    <h2>สายพันธุ์แตงโมที่น่าสนใจ</h2>
+
+    <div class="watermelon-list">
+      <div class="card">
+        <h3>แตงโมแดง</h3>
+        <p>
+          เนื้อสีแดงสด รสหวานฉ่ำ เป็นสายพันธุ์ที่ได้รับความนิยมมากที่สุด
+          เหมาะสำหรับรับประทานสด
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>แตงโมเหลือง</h3>
+        <p>
+          เนื้อสีเหลือง รสหวานนุ่ม กลิ่นหอมเฉพาะตัว
+          นิยมในกลุ่มคนรักสุขภาพ
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>แตงโมไร้เมล็ด</h3>
+        <p>
+          รับประทานง่าย ไม่มีเมล็ด รสชาติสม่ำเสมอ
+          เหมาะสำหรับทุกวัย
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>แตงโมลูกเล็ก</h3>
+        <p>
+          ขนาดกะทัดรัด เหมาะกับครอบครัวขนาดเล็ก
+          และการบริโภคในชีวิตประจำวัน
+        </p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
